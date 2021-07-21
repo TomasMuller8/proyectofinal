@@ -1,0 +1,63 @@
+#ContenedorContacto {
+  background: url(../imagenes//miguel-a-amutio-Y0woUmyxGrw-unsplash.jpg)
+    no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact__section {
+  background-color: rgba(182, 175, 175, 0.5);
+  margin: 150px;
+  border-radius: 25px;
+ h1 {
+  float: center;
+  text-align: center;
+  color: black;
+  margin: 100px auto auto;
+  font-weight: bold;
+  font-size: 5vh;
+}}
+.border {
+  width: 100px;
+  height: 10px;
+  background: $azulapollo;
+  margin: 40px auto;
+}
+
+.contact__form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;}
+.contact__form__text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  opacity: 0.8;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+&:focus {
+  box-shadow: 0 0 10px 4px $azulapollo;
+}}
+
+textarea.contact__form-text {
+  resize: none;
+  height: 180px;
+}
+.contact-form__btn {
+  float: right;
+  border: 0;
+  background: $azulapollo;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 60px;
+&:hover {
+  background: #2980b9;
+}}

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+}
+$azulapollo: #03658c;
+@import "navs2";
+@import "sobrenosotros";
+@import "card";
+@import "medias";
+@import "contact";
+@import "planificacion";
+@import "seguimiento";
+
+/*Baneer de inicio*/
+.banner__inicio {
+  width: 100%;
+  height: 750px;
+  background-image: url(../imagenes/sporlab-XiZ7pRvCzro-unsplash.jpg);
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+
+  h1 {
+    color: $azulapollo;
+    font-size: 65px;
+    font-weight: 500px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+  }
+}
+
+.contenedorInicio {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*Sobre nosotros*/
+
+/*footer*/
+footer {
+  color: #03588c;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo-footer {
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+.logo-footer :hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.titulo-seccion {
+  color: white;
+  background-color: #03658c;
+  background-size: auto;
+}
+
+.redes-sociales i {
+  font-size: 30px;
+  padding: 0px 20px;
+}
+.copy {
+  margin-right: 10px;
+}
+/*Evaluacion*/
+.mainEvalucion {
+  width: 99%;
+  margin-top: 80px;
+}
+
+h1 {
+  color: $azulapollo;
+  font-size: 65px;
+  font-weight: 500px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.banner__evaluacion {
+  width: 100%;
+  height: 600px;
+  background-image: url(../imagenes/evaluacion-bn.jpg);
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  box-sizing: inherit;
+  h1 {
+    color: $azulapollo;
+    font-size: 65px;
+    font-weight: 500px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+  }
+}
+
+.contenedorInicio {
+  max-width: 900px;
+  margin: 0 auto;
+}

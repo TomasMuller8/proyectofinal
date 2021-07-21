@@ -1,0 +1,85 @@
+/* Barra navegacion*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 0px;
+}
+
+.ham {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ham span {
+  background-color: #03588c;
+  display: block;
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+.enlaces__menu {
+  display: flex;
+  padding: 0;
+  li {
+    padding: 0 40px;
+    list-style-type: none;
+    transition: 0.9s;
+    a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #f3f3f3;
+      font-weight: 600;
+      color: #03588c;
+      transition: all 0.9s ease;
+      &:hover {
+        padding: 5px 10px;
+        background: $azulapollo;
+        color: white;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+/* Animaciones */
+
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.enlaces__menu.activado {
+  display: flex;
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado {
+  transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado {
+  opacity: 0;
+}
+.br-3.animado {
+  transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.ham.girar:hover {
+  transform: rotate(360deg);
+}

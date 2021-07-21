@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  background-color: white;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+}
+/* Barra navegacion*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 0px;
+}
+
+.ham {
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ham span {
+  background-color: #03588c;
+  display: block;
+  height: 3px;
+  width: 28px;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+.enlaces-menu {
+  display: flex;
+  padding: 0;
+}
+.enlaces-menu li {
+  padding: 0 40px;
+  list-style-type: none;
+  transition: 0.3s;
+}
+
+.enlaces-menu li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #f3f3f3;
+  font-weight: 600;
+  color: #03588c;
+}
+.enlaces-menu li:hover {
+  background-color: #03588c;
+  border-radius: 18px;
+}
+.enlaces-menu li a:hover {
+  color: white;
+}
+
+/* Animaciones */
+
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.enlaces-menu.activado {
+  display: flex;
+  animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado {
+  transform: rotate(-45deg) translate(-10px, 8px);
+}
+
+.br-2.animado {
+  opacity: 0;
+}
+.br-3.animado {
+  transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.ham.girar:hover {
+  transform: rotate(360deg);
+}
+
+/*Baneer de inicio*/
+.banner-inicio {
+  width: 100%;
+  height: 750px;
+  background-image: url(../imagenes/apollo-entrenamiento.jpg);
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 33px 29px 0px;
+}
+.banner-inicio h1 {
+  color: #03658c;
+  font-size: 65px;
+  font-weight: 500px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+}
+
+.contenedorInicio {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*Centro de la pagina*/
+.PrimeraPartePrincipal {
+  width: 100%;
+}
+
+.tituloNS {
+  margin-top: 120px;
+  color: #03588c;
+  text-align: center;
+  font-size: 3em;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#articuloPrincipal {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+#articuloPrincipal .articuloContenedor {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#articuloPrincipal .articuloContenedor a {
+  text-align: center;
+  text-decoration: none;
+  color: #03588c;
+  line-height: 1.4;
+}
+
+#articuloPrincipal .articuloContenedor article {
+  width: 300px;
+  height: 390px;
+  transition: all 1s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  transform: scale(0.9);
+  margin-bottom: 180px;
+}
+
+#articuloPrincipal .articuloContenedor article:hover {
+  transform: scale(1);
+}
+
+#articuloPrincipal .articuloContenedor img {
+  display: block;
+  margin: auto;
+}
+#articuloPrincipal .articuloContenedor h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+#articuloPrincipal .articuloContenedor p {
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+}
+/*Sobre nosotros*/
+
+.sobreNosotros {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5em 10em;
+  margin: 0;
+  gap: 6em;
+}
+
+.bannerNosotros img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.nosotrosTexto {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.nosotrosTextoTitulo1 {
+  font-size: 2em;
+  font-family: sans-serif;
+  color: #03588c;
+  font-weight: bold;
+}
+.nosotrosTextoParrafo {
+  font-size: 1.5em;
+  text-align: center;
+  color: #03658c;
+  font-family: sans-serif;
+  margin-top: 10vh;
+  margin-right: 10px;
+  align-items: center;
+}
+
+/*footer*/
+footer {
+  color: #03588c;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo-footer {
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+.logo-footer :hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.titulo-seccion {
+  color: white;
+  background-color: #03658c;
+  background-size: auto;
+}
+
+.redes-sociales i {
+  font-size: 30px;
+  padding: 0px 20px;
+}
+.copy {
+  margin-right: 10px;
+}
+/*Evaluacion*/
+.mainEvalucion {
+  width: 99%;
+  margin-top: 100px;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto {
+  background-image: url(../imagenes/logo.jpg);
+}
+/**Contacto*/
+#ContenedorContacto {
+  background: url(../imagenes//miguel-a-amutio-Y0woUmyxGrw-unsplash.jpg)
+    no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-section {
+  background-color: rgba(182, 175, 175, 0.5);
+  margin: 150px;
+  border-radius: 25px;
+}
+.contact-section h1 {
+  float: center;
+  text-align: center;
+  color: black;
+  margin: 100px auto auto;
+  font-weight: bold;
+  font-size: 5vh;
+}
+.border {
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 60px;
+}
+.contact-form-btn:hover {
+  background: #2980b9;
+}
+/*Media queries*/
+@media (max-width: 552px) {
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    transition: 0.2s 0.1s;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .logo {
+    padding-left: 25px;
+  }
+
+  .enlaces-menu {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-out;
+    width: 100%;
+  }
+  .enlaces-menu li {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sobreNosotros {
+    background-color: #03588c;
+    height: auto;
+    width: 100%;
+  }
+
+  .nosotrosTextoTitulo1 {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  .nosotrosTextoParrafo {
+    color: white;
+    font-family: sans-serif;
+  }
+  .nosotrosTexto {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 552px) {
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    transition: 0.2s 0.1s;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .logo {
+    padding-left: 25px;
+  }
+
+  .enlaces-menu {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-out;
+    width: 100%;
+  }
+  .enlaces-menu li {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sobreNosotros {
+    background-color: #03588c;
+    height: auto;
+  }
+  .bannerNosotros img {
+    display: none;
+  }
+  .nosotrosTextoTitulo1 {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  .nosotrosTextoParrafo {
+    color: white;
+    font-family: sans-serif;
+    align-items: left;
+  }
+  .nosotrosTexto {
+    padding: 0;
+    margin: 0;
+    align-items: left;
+  }
+}
+/* @media (min-width: 768px) {
+
+.bd-placeholder-img-lg {
+  font-size: 3.5rem;
+}
+} */

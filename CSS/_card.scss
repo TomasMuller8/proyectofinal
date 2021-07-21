@@ -1,0 +1,73 @@
+/*Centro de la pagina*/
+
+.PrimeraPartePrincipal{
+  width: 100%;
+}
+
+.tituloNS{
+margin-top: 120px;
+  color:#03588c;
+  text-align: center;
+  font-size: 3em;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+.articuloPrincipal {
+  width: 100%;
+  display: flex ;
+  padding-top: 100px;
+justify-content: space-around;
+}
+
+.articuloPrincipal__articuloContenedor {
+display: flex;
+width: 100%;
+justify-content: space-around;
+flex-wrap: wrap;
+
+
+ a {
+  text-align: center;
+  text-decoration: none;
+  color:#03588c;
+  line-height: 1.4; 
+ }
+
+  img {
+display: block;
+margin: auto;
+}
+h3{
+  font-size: 22px;
+   font-weight: bold;
+   font-family: sans-serif;
+   margin-top: 10px;
+}
+p{
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  
+ 
+  
+}}
+
+
+
+.articuloPrincipal__card {
+  width: 300px;
+  height: 390px;
+  transition: all 1s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  transform: scale(0.9);
+  margin-bottom: 180px;
+&:hover {
+  transform: scale(1);
+
+}}

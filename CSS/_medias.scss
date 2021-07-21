@@ -1,0 +1,125 @@
+/*Media queries*/
+@media (max-width: 552px) {
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    transition: 0.2s 0.1s;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .logo {
+    padding-left: 25px;
+  }
+
+  .enlaces__menu{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-out;
+    width: 100%;
+  li {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }}
+
+  .sobreNosotros {
+    background-color: #03588c;
+    height: auto;
+    width: 100%;
+  }
+   .sobreNosotros__nosotrosTexto {
+    padding: 0;
+    margin: 0;
+  }
+
+  .sobreNosotros--titulo {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  .sobreNosotros--parrafo{
+    color: white;
+    font-family: sans-serif;
+  }
+ 
+}
+
+@media (max-width: 768px) and (min-width: 552px) {
+  .ham {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    transition: 0.2s 0.1s;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items:center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .logo {
+    padding-left: 25px;
+  }
+
+  .enlaces__menu {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-out;
+    width: 100%;
+  li {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }}
+/*Sobre nosotros*/
+ .sobreNosotros{
+    background-color: #03588c;
+    height: auto;
+  }
+  .sobreNosotros__banner {
+  width: 100%;
+  height: 100%;
+   img {
+    display: none;
+  }}
+
+   .sobreNosotros__nosotrosTexto{
+    padding: 0;
+    margin: 0;
+    align-items: left;
+  }
+  .sobreNosotros--titulo{
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  .sobreNosotros--parrafo {
+    color: white;
+    font-family: sans-serif;
+    align-items: left;
+  }}
